@@ -1,0 +1,98 @@
+body {
+    background-color: rgb(194, 194, 194);
+}
+
+h1 {
+    color: rgba(136, 36, 36, 1);
+    margin-left: 100px;
+    text-shadow: 5px 2px 5px rgba(0, 0, 0, 1);
+}
+
+.container{
+    width: 450px;
+    height: 450px;
+    background-color: rgb(255, 244, 183);
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+.container .squares:nth-child(-n+4) {
+    background-image: url(/Users/cameronhackwith/Desktop/HTML-and-CSS-Projects/Projects/Images/smileyface2.png);
+    color: #ffffff;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 25%;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+.squares:nth-child(-n+4) {
+    font-family: 'Vibes', cursive;
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.squares:nth-child(1) {
+    background: rgb(38, 24, 245)
+}
+
+.squares:nth-child(2) {
+    background: rgb(228, 2, 2)
+}
+
+.squares:nth-child(3) {
+    background: rgb(5, 165, 0)
+}
+
+.squares:nth-child(4) {
+    background: rgb(0, 224, 231)
+}
+
+/*-------------------------------------------
+                    HOVER
+--------------------------------------------*/
+
+.container .squares:nth-child(-n+4):hover {
+    background-image: url(/Users/cameronhackwith/Desktop/HTML-and-CSS-Projects/Projects/Images/smileyface1.png);
+    transform: scale(0.5);
+    animation-name: race;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(2.5,.2,.3,2);
+}
+
+.squares:nth-child(1):hover {
+    background: rgb(61, 80, 253)
+}
+
+.squares:nth-child(2):hover {
+    background: rgb(255, 78, 78)
+}
+
+.squares:nth-child(3):hover {
+    background: rgb(45, 172, 62)
+}
+
+.squares:nth-child(4):hover {
+    background: rgb(92, 225, 230)
+}
+
+/*-------------------------------------------
+                ANIMATION
+--------------------------------------------*/
+
+@keyframes race {
+    0%, 100% {
+        transform: translateY(0px);
+        background-image: url(/Users/cameronhackwith/Desktop/HTML-and-CSS-Projects/Projects/Images/smileyface1.png)
+    }
+    50% {
+        transform: translateY(330px)
+    }
+}
