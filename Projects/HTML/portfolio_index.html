@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="../CSS/portfolio.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap" rel="stylesheet"> 
 </head>
 <body class="background">
 
@@ -38,9 +40,9 @@
     ------------------->
 
 
-<div>
+<div class="title">
+    <h1 style="color: white">Cameron Hackwith's Portfolio</h1>
     <div class="logo-box">
-        <h1>Cameron Hackwith's Portfolio</h1>
         <br><h3 id="skills">SKILLS:</h3>
         <div class="row">
             <div id="python" class="column">
@@ -72,20 +74,80 @@
 </div>
 
     <!------------------
-            ABOUT
+  *****LOWER WALLPAPER*****
     ------------------->
 
+<div class="wallpaper">
 
-    <div class="row" id="about">
-        <div class="column_2">
-            <div class="about-box">
-            <img src="../Images/Thumbnails/Development.jpg" alt="Development">
+    <div class="lower-container">
+        
+        <!------------------
+                ABOUT
+        ------------------->
+
+        <div class="row" id="about">
+            <div class="column_2">   <!-- LEFT COLUMN -->
+                <img src="../Images/Thumbnails/Development.jpg" alt="Development">
+            </div>
+            <div class="column_1">   <!-- RIGHT COLUMN -->
+                <h1>About</h1>
+                <p>I am a software developer who loves to code!
+                <br>
+                <br>I also love other things too!
+                
+                </p>
             </div>
         </div>
-        <div class="column_1">
-            <h1>About</h1>
+
+        <!------------------
+            GITHUB
+        ------------------->
+
+
+        <div class="row" id="github">
+            <div class="column_1">   <!-- LEFT COLUMN -->
+                <p>check out some of my code on Github!</p>
+            </div>
+            <div class="column_2">   <!-- RIGHT COLUMN -->
+                <img id="gitphoto" src="../Images/Thumbnails/GitHub.png" alt="GITHUB">
+            </div>
         </div>
+
+        <!------------------
+            CONTACT
+        ------------------->
+
+
+        <div class="row" id="contact">
+            <div class="column_3">   <!-- LEFT COLUMN -->
+                <img src="../Images/Thumbnails/Contactpic.jpg" alt="Contact Me">
+            </div>
+            <div class="column_1">   <!-- RIGHT COLUMN -->
+                <h1>Contact</h1>
+                <form action="" method="get">
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" placeholder="Please write your message here">
+                        <input type="submit" value="submit">
+                </form>
+            </div>
+        </div>
+
+        <!------------------
+            FOOTER
+        ------------------->
+
+        <footer>
+            <p>
+                www.enterwebsite.com &nbsp;|&nbsp; 2019
+            </p>
+        </footer>
     </div>
+</div>   
+    
 
 
             
