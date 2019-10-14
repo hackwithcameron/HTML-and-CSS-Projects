@@ -12,7 +12,35 @@ body {
     min-width: 100%;
     z-index: -2;
     display: block;
+    background-size: cover;
 }
+
+h1 {
+    font-family: 'Playfair Display SC', serif;
+    font-family: 'Varela', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    z-index: 1;
+    font-size: 2em;
+    color: rgb(197, 195, 198);
+    display: relative;
+    margin: -33px;
+}
+
+
+.title h1 {
+    transform: translateY(-950%);
+}
+
+.title p {
+    transform: translateY(-1800%);
+}
+
 
 
 /*---------------------------------
@@ -68,48 +96,54 @@ nav:hover {
 .logo-box {
     width: auto;
     height: 30%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.3);
     padding: 20px;
     z-index: 1;
     position: absolute;
-    transform: translateY(-160%);
+    transform: translateY(-203%);
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.9);
     box-shadow: 0px -7px 10px rgba(0, 0, 0, 0.4);
 }
 
-.title h1 {
-    text-align: center;
-    font-family: 'Cinzel', serif;
-    z-index: 1;
-    transform: translateY(-950%);
-    font-size: 3em;
-    color: rgb(197, 195, 198);
-}
-
 .logo-box #skills {
     text-align: center;
-    color: white;
+    color: rgb(197, 195, 198);
     position: relative;
     transform: translate(0%, -25%);
     font-family: 'Cinzel', serif;
+    margin-top: 0px;
+    margin-bottom: 35px;
+    font-size: 22pt;
 }
 
-.row {
-    width: 75%;
+.row-logo {
+    width: auto;
     display: flex;
     margin: 0px auto;
     position: relative;
     text-align: center;
     margin-top: -40px;
+    z-index: 5;
+}
+
+.row {
+    width: 85%;
+    display: flex;
+    margin: 0px auto;
+    position: relative;
+    text-align: center;
+    margin-top: -40px;
+    box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 1);
+    box-shadow: -3px -3px 5px 3px rgba(0, 0, 0, 1)
 }
 
 .column {
-    flex: 15%;
+    flex: 10%;
     padding: 5px;
 }
 
 .column img {
-    width: 100%;
+    width: 75%;
     filter: grayscale(75%);
     transition: .5s ease;
 }
@@ -126,6 +160,7 @@ nav:hover {
 
 #css-image img {
     transform: scale(1.1);
+    padding-bottom: 15px;
 }
 
 #html-image {
@@ -133,10 +168,16 @@ nav:hover {
 }
 
 .overlay {
-    color: white;
-    transform: translatey(-500%);
+    color: rgb(220, 220, 221);
     opacity: 0;
+    z-index: 25;
+    transform: 2s;
+    font-size: 2em;
+    font-family: 'Sigmar One', cursive;
+    transform: translateY(-50%);
 }
+
+
 
 /*---------------------------------
           LOGO BOX HOVER
@@ -149,15 +190,18 @@ nav:hover {
     transition: 1.5s ease;
 }
 
-.column img:hover .overlay {
+img:hover ~ .overlay {
+    transition: opacity 2s;
     opacity: 1;
-    transition: 2s ease;
+    transition: 5s ease;
+    transform: scale(1.2);
+    transition: transform 2s;
 }
 
 #css-image img:hover {
     filter: grayscale(0%);
     transition: transform 1s;
-    transform: scale(1.5);
+    transform: scale(1.8);
     transition: 1.5s ease;
 }
 
@@ -170,10 +214,10 @@ nav:hover {
 }
 
 .lower-container {
-    background-image: url("../Images/Thumbnails/background_wall2.png");
+    background-image: url("../images/background_wall2.png");
     position: flex;
-    margin-top: -14%;
-    padding-top: 7%;
+    margin-top: -25%;
+    padding-top: 15%;
 }
 /*---------------------------------
                ABOUT
@@ -275,11 +319,64 @@ form {
 }
 
 
+input[type=text] {
+	width: 100%;
+	padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: Perpetua, Rockwell Extra Bold; 
+}
+
+
+input[type=submit] {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+    font-family: Perpetua, Rockwell Extra Bold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+input[type=submit]:hover {
+	background-color: white; 
+	color: black;
+	font-weight: bold; 
+	transition: transform 1.5s;
+}
+
+
+form { 
+	border-radius: 5px; 
+	background-color: #f2f2f2;
+	padding: 20px;
+	font-family: "Trebuchet MS", Optima;
+}
 /*---------------------------------
-              CONTACT
+          COLUMN 3 HOVER
+---------------------------------*/
+
+.column_3 img:hover {
+    transform: scale(0.9);
+}
+
+/*---------------------------------
+            FOOTER
 ---------------------------------*/
 
 footer {
     width: 100%;
     text-align: center;
+    color: white;
 }

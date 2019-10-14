@@ -1,0 +1,212 @@
+
+
+/*--------------------------------------
+                NAV
+--------------------------------------*/
+
+
+nav {
+    background-color: rgb(28, 127, 173);
+    border-radius: 5px;
+    border: 1px solid black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 25px;
+    z-index: 100;
+}
+
+nav a {
+    color: rgb(160, 160, 160);
+}
+
+nav a:hover {
+    color: white;
+    background-color: rgb(36, 165, 224);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/*--------------------------------------
+              PICTURE
+--------------------------------------*/
+
+.container {
+    text-align: center;
+    position: relative;
+    display: block;
+}
+
+
+.image-box img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 3em;
+    opacity: 1;
+    transition: .5s ease;
+}
+.image-box {
+    -webkit-filter: saturate(150%);
+    filter: saturate(150%);
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 2px 2px 2px rgb(192, 205, 247);
+    color: rgb(52, 65, 247);
+    transform: rotate(-5deg);
+    opacity: 1;
+    transition: .5s ease;
+}
+
+/*--------------------------------------
+            PICTURE TRANSITION
+--------------------------------------*/
+
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 44%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(52, 65, 247);
+    text-shadow: 2px 2px 2px rgb(192, 205, 247);
+    transform: rotate(-5deg);
+    font-size: 23px;
+}
+
+.image-box:hover img {
+    opacity: .5;
+}
+
+.image-box:hover .overlay {
+    opacity: 0;
+}
+
+.image-box:hover .middle {
+    opacity: 1;
+}
+
+.table-container {
+    text-align: center;
+}
+
+/*--------------------------------------
+              VIDEO
+--------------------------------------*/
+.video {
+    width: 56%;
+    margin: 3em auto;
+}
+
+
+video {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    border-radius: 5px;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.video-overlay {
+    opacity: 0;
+    color: rgb(197, 135, 0);
+    display: block;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, 440%);
+}
+
+.video:hover .video-overlay {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.video:hover video {
+    opacity: .3;
+    transition: .5s ease;
+}
+
+
+
+/*--------------------------------------
+              COLUMNS
+--------------------------------------*/
+
+.row {
+    height: 300px;
+    background-color: rgb(146, 191, 250);
+    border-radius: 7px;
+    border: 1px solid rgb(250, 109, 74);
+    width: 50%;
+    margin: 3em auto;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    color: rgb(196, 238, 129);
+    text-align: center;
+    font-size: 25px;
+}
+
+/*--------------------------------------
+              TABLE
+--------------------------------------*/
+
+table {
+    margin-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-row th {
+    background-color: rgb(107, 107, 230);
+    border-radius: 9px;
+}
+
+th, td {
+    border-radius: 9px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/*--------------------------------------
+              HOVER 
+--------------------------------------*/
+
+p {
+    text-align: center;
+    color: rgb(105, 0, 0);
+    cursor: pointer;
+}
+
+p:hover {
+    color: rgb(233, 55, 55);
+}
+
+footer {
+    text-align: center;
+}
+
+
