@@ -78,7 +78,6 @@
 
 
 
-
             <div id="showtimes" class="pt-1">
                 <div class="container my-5 col-md-auto">
                 <h1>Showtimes:</h1>
@@ -226,14 +225,89 @@
                 </div>
             </div>
 
-            <form>
-                <h1 class="text-primary  my-5">Sign up for Movie Club Rewards!</h1>
-                <div class="form-group">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                </div>
-                <a tabindex="0" class="btn btn-lg btn-info popover-dismiss" role="button" data-toggle="popover" data-trigger="focus" title="Enter Email" data-content="New rewards every month!">Sign up!</a>
-            </form>
-        </div>
+             <div class="container">
+                <div class="jumbotron" style="margin:100px;">
+                    <h1 class="display-4 text-center">Registration For New User</h1>
+                    <br>
+                    <br>
+                        <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="firstName">First Name</label>
+                                    <input type="firstname" class="form-control" id="firstName" placeholder="" required>
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="lastname" class="form-control" id="lastName" placeholder="" required>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputAddress">Address</label>
+                                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+                                </div>
+
+
+
+
+                                <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                          <label for="inputCity">City</label>
+                                          <input type="text" class="form-control" id="inputCity" required>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                          <label for="inputState">State</label>
+                                          <select id="inputState" class="form-control" required>
+                                            <option selected>Choose...</option>
+                                            <option>Jharkhand</option>
+                                            <option>Kolkata</option>
+                                            <option>Assam</option>
+                                            <option>Mumbai</option>
+                                            <option>Rajasthan</option>
+                                            <option>...</option>
+                                          </select>
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                          <label for="inputZip">Zip</label>
+                                          <input type="text" class="form-control" id="inputZip" required>
+                                        </div>
+                                      </div>
+
+
+
+
+                                <div class="form-group"> <!-- Date input -->
+                                    <label class="control-label" for="date">Date Of Birth</label>
+                                    <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                                  </div>
+
+                                  
+                                  <div class="form-group">
+                                        <label for="phoneAddress">Phone Number</label>
+                                        <input type="text" class="form-control" id="phoneAddress" placeholder="" required>
+                                      </div>
+
+                                 
+                        
+                                            <form>
+                                                   <div class="form-group">
+                                                            <label for="inputGender">Gender</label>
+                                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                                    <option selected>Choose...</option>
+                                                                    <option value="1">Male</option>
+                                                                    <option value="2">Female</option>
+                                                                    <option value="3">Not defined</option>
+                                                                  </select>
+                                                        </div> 
+                                                        <a href = "http://google.co.in">
+                                                        <button type="button" class="btn btn-success btn-lg btn-block">Sign Up</button>
+                                                        </a>
+                                                           </div>
+                                                </div>
+                            </form>
+                                </div>
+                              </div>
+
+
 
         <!--FORM MODAL-->
 
